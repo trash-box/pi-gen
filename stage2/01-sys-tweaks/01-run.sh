@@ -20,6 +20,7 @@ if [ "${ENABLE_SSH}" == "1" ]; then
 else
 	systemctl disable ssh
 fi
+systemctl enable vncserver-x11-serviced
 systemctl enable regenerate_ssh_host_keys
 EOF
 
