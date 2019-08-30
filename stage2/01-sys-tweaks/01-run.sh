@@ -54,13 +54,4 @@ on_chroot << EOF
 usermod --pass='*' root
 EOF
 
-on_chroot << EOF
-ufw default deny incoming
-ufw default deny outgoing
-ufw allow out 67,68/udp
-ufw allow in ssh,http,https
-ufw allow out 1880/tcp
-ufw enable
-EOF
-
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
