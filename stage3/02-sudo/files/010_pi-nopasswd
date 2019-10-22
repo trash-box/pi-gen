@@ -1,3 +1,2 @@
 pi ALL=(ALL) PASSWD: ALL
 pi ALL=(ALL) NOPASSWD: /usr/sbin/service screenly*, /sbin/reboot *, /usr/bin/vcgencmd *
-
